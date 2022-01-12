@@ -1,0 +1,44 @@
+//exercicio,mostra nome do aluno aprovado na media
+const aluno = [
+  {
+    nome: "joao",
+    nota: 2,
+    turma: "1B"
+  },
+  {
+    nome: "sofia",
+    nota: 10,
+    turma: "1B"
+  }
+];
+
+function alunosAprovados(array, media) {
+  let aprovados = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i].nota >= media) {
+      aprovados.push(array[i].nome);
+    }
+  }
+  return aprovados;
+}
+console.log(alunosAprovados(aluno, 6));
+//exercicios 2
+
+function calculaIdade(anos) {
+  return `daqui a ${anos}, ${this.nome} terá ${
+    this.idade + anos
+  } anos de idade`;
+}
+
+const pessoa = {
+  nome: "maria",
+  idade: 23
+};
+const animal = {
+  nome: "nick",
+  idade: 5
+};
+
+console.log(calculaIdade(2));
+console.log(calculaIdade.call(pessoa, 2));
+console.log(calculaIdade.apply(animal, [2]));
