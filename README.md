@@ -138,10 +138,10 @@ console.log(joao);
 ~~~
 ## Manipulando Dados
 Prototype pode ser dizer que são funcionalidades próprias do js,existindo a cadeia de prototipo.
-<div>
+
 ![Captura de tela 2022-03-04 104951](https://user-images.githubusercontent.com/80164486/156775116-4f9469d5-8c94-49ff-9896-3bd6f2c8ad8b.png)
 ![Captura de tela 2022-03-04 104858](https://user-images.githubusercontent.com/80164486/156775122-8beb2761-30f7-44e1-b2fc-93d5505c6d6a.png)
-</div>
+
 #### Alterando tipo de dado para outro
 Type conversion/typecasting vs Type coersion
 Type coersion:
