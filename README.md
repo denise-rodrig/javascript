@@ -53,7 +53,7 @@ console.log(cliente[1].sobremesa);
 
 ## Variáveis: 
 JS é uma linguagem fracamente tipada e dinâmica
-* const,let,var
+* [const,let,var](https://github.com/denise-rodrig/javascript/blob/main/let%2Cvar%2Cconst.js)
 
 ~~~javascript 
 //declaração de variável
