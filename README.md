@@ -77,7 +77,7 @@ console.log(name + ' tem '+ age + ' anos');
 //interpolando valores com template strings
 console.log(`${name} tem ${age} anos`);
 ~~~
-## Funções
+## [Funções](https://github.com/denise-rodrig/javascript/blob/main/funcoes.js)
 ~~~javascript
 //declaração
 function criarFrases(){
