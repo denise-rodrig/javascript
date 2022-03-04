@@ -39,7 +39,7 @@ console.log(animais[1]);
 console.log(animais[2]);
 console.log(animais.length);
 
-//--------
+//----------------//
 const cliente=[
   'maria',
   {
@@ -78,7 +78,6 @@ console.log(name + ' tem '+ age + ' anos');
 console.log(`${name} tem ${age} anos`);
 ~~~
 ## Funções
-Pode usar elas dentro de variaveis,estas funções são chamadas de anônimas;
 ~~~javascript
 //declaração
 function criarFrases(){
@@ -88,7 +87,9 @@ function criarFrases(){
 }
 //chamar a função
 criarFrases();
-
+~~~
+Pode usar elas dentro de variaveis,estas funções são chamadas de anônimas;
+~~~javascript
 // parâmetros
 const sum = function(numero1,numero2){
   console.log(numero1+numero2);
@@ -96,4 +97,58 @@ const sum = function(numero1,numero2){
 //argumentos
 sum(2,2);
 ~~~
+Function Hoisting: primeiro executa/chama a função logo após cria a função.Acontece o hosting.
+~~~javascript
+myname();
+function myname(){
+  console.log('Mayk');
+}
+~~~
+Arrow Function: não necessariamente usando com uma variável.Também não ocorre hosting.
+~~~javascript
+const myname = () => {
+  console.log('Mayk');
+}
+myname();
+~~~
+Callback Function: simplesmente é uma função sendo passada em parâmetro para outra função.
+~~~javascript
+function myname(name){
+  console.log('antes do callback');
+  console.log(name);
+  name();
+  console.log('depois do callback');
+}
+myname(
+  () => {
+    console.log('Mayk');
+  })
+~~~
+Função Construtura/Constructor: é um jeito de fazer um novo objeto com função e a expressão ***New*** (cria o object) e uso do ***This*** (cria a estrutura do object,como forma de boa prática)
+~~~javascript
+function pessoa(nome){
+  this.nome=nome //Este(this) nome recebe o nome enviado por parâmetro.
+}
+const mayk = new pessoa('mayk') // nova pessoa parâmetro 'mayk'
+const joao = new pessoa('joao') // nova pessoa parâmetro 'joao'
 
+
+console.log(mayk); //resultado object
+console.log(joao);
+~~~
+## Manipulando Dados
+Prototype pode ser dizer que são funcionalidades próprias do js,existindo a cadeia de prototipo.
+<div>
+![Captura de tela 2022-03-04 104951](https://user-images.githubusercontent.com/80164486/156775116-4f9469d5-8c94-49ff-9896-3bd6f2c8ad8b.png)
+![Captura de tela 2022-03-04 104858](https://user-images.githubusercontent.com/80164486/156775122-8beb2761-30f7-44e1-b2fc-93d5505c6d6a.png)
+</div>
+#### Alterando tipo de dado para outro
+Type conversion/typecasting vs Type coersion
+Type coersion:
+~~~javascript
+console.log('9'+5); //transforma 5 em string automaticamente
+~~~
+Type conversion:
+~~~javascript
+console.log(Number('9')+5); //transforma 9 em number feito pelo dev
+~~~
