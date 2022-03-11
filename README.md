@@ -302,3 +302,9 @@ condicional ?:
 
 atribuição = += -= *=
 
+## Condicionais e controle de fluxo
+if...else
+
+switch
+
+Throw e Try/ Catch
