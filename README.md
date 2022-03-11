@@ -152,3 +152,153 @@ Type conversion:
 ~~~javascript
 console.log(Number('9')+5); //transforma 9 em number feito pelo dev
 ~~~
+## Expressões e Operadores
+
+expressões é qualquer linha de código do js.Ex: let number;
+
+Operador binário: number + 1
+
+Operador unario: ++ number. Ex:typeof e delete(deletar propriedade dentro do object)
+
+Operador ternario: True ? 'alo' :'nada' // pode ser uma função para a condição anterior
+
+~~~javascript
+let pao=true;
+let queijo=true;
+
+const cafeBom = pao && queijo ? 'Café top' : 'Café ruim'; //se condição é true então faz.. se não faz...
+console.log(cafeBom);
+~~~
+
+***NEW*** é uma expressão para criar um novo object
+~~~javascript
+let date= new Date('2022-12-01');
+console.log(date)
+~~~
+
+### Operadores Aritiméticos
+
+multiplicação *
+
+divisão /
+
+soma +
+
+subtração -
+
+resto da divisão %
+
+incremento ++ or antes ++ incremento
+
+decremento -- or antes -- decremento
+
+exponencial **
+
+### Operadores que agrupa expressões,que muda a ordem de precedência(muito usando para calculos matematicos)
+
+Ex: let total = (2 + 3 ) * 2; or
+
+let total = 'alo' + 'maria';
+
+### Operadores de comparação
+
+ == igual a... or ===
+
+ != diferente de... or !==
+
+ >maior que... or >=
+
+ <menor quwe... or <=
+
+### Operadores de atribuição (assignment)
+
+~~~javascript
+let x;
+x=1;
+console.log(x);
+x += 2; // x = x + 2;
+console.log(x);
+x -= 1;
+console.log(x);
+x *= 2;
+console.log(x);
+x /= 2;
+console.log(x);
+x %= 2;
+console.log(x)
+x **= 2;
+console.log(x)
+~~~
+
+### Operadores lógicos
+
+2 valores booleanos que quando verificados resultará em verdadeiro ou falso.
+
+AND && se os dois valores for verdadeiro == verdadeiro.O mesmo para falso
+
+OR || se um dos valores for verdadeiro == verdadeiro.Será falso quando os dois forem falsos
+
+NOT ! se um valor for verdadeiro irá ser falso.
+
+## FALSY
+quando um valor é considerando false em contextos onde um booleano é obrigatório(condicionais e loops).Sem comparar valores,isso ocorre porque o js transforma em valores booleanos auto.São eles:
+
+false
+
+0
+
+-0
+
+" "
+
+null
+
+underfined
+
+NaN
+
+## TRUTHY
+quando um valor é considerado true em contextos onde um booleano é obrigatório(condicionais e loops).Sem comparar valores,isso ocorre porque o js transforma em valores booleanos auto.São eles:
+
+true
+
+{}
+
+[]
+
+1
+
+3.23
+
+"0"
+
+"false"
+
+-1
+
+Infinity
+
+-Infinity
+
+## Precedência de operadores
+
+grouping ()
+
+negação e incremento ! ++ --
+
+multiplicação e divisão * /
+
+adição e subtração + -
+
+relacional < <= > >=
+
+igualdade == != === !===
+
+AND &&
+
+OR ||
+
+condicional ?:
+
+atribuição = += -= *=
+
