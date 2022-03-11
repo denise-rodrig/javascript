@@ -302,9 +302,27 @@ condicional ?:
 
 atribuição = += -= *=
 
-## Condicionais e controle de fluxo
+## [Condicionais e controle de fluxo](https://github.com/denise-rodrig/javascript/blob/main/condicionais.js)
 if...else
 
 switch
 
-Throw e Try/ Catch
+## Throw e Try/ Catch
+throw é usando para jogar ao catch um possivel erro programado pelo dev e realizado pelo user.Modela esse erro,criando sua descrição.
+try irá tentar funcionar o cógigo,geralemente function
+e se houver erro o catch pega e retorna o tal erro descrito no throw.
+
+~~~javascript
+function name(nome=''){
+  if (nome===""){
+    throw 'nome é obrigatótio'
+  }
+  console.log('tudo certo')
+}
+
+try{
+  name('')
+}catch (e){
+  console.log(e) //recebe e exibir o erro do throw
+}
+~~~
