@@ -326,3 +326,15 @@ try{
   console.log(e) //recebe e exibir o erro do throw
 }
 ~~~
+## Estruturas de repetição
+
+for(variavel;condição;expressao final){} // enquanto for verdadeiro ocorre o código.Seus dois modos de controle do loop é pela:
+
+- break: parar a execução do loop
+- continue: pula a execução do momento
+
+while(condição){} // enquanto for verdadeiro ocorre o código.Mas não possui controles como o ***for***.Usando não sabemos o momento da parada do loop.
+
+for (variaval of variavel externa){} // cria um loop atraves de alguma variavel passada para of.Pode usar array,string,number
+
+for(variavel in object){} // cria um loop por meio de um object,assim visualizar as propriedades e seus atributos.
