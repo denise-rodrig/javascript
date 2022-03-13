@@ -78,3 +78,37 @@ function doWhile() {
 }
 
 console.log(doWhile());
+
+
+for(let i =0;i<10;i++){
+  if(i===3){
+    continue
+  }
+  console.log(i)
+}
+
+let e=0;
+while(e<10){
+  console.log(e);
+  e++;
+}
+
+let name='mayk';
+let names=['paulo','joao','mateus'];
+for(let nome of name){
+  console.log(nome)
+}
+for (let nome of names){
+  console.log(nome)
+}
+
+let person={
+  name:'maria',
+  age:20,
+  weigth:56
+}
+for(let property in person){
+  console.log(property)
+  console.log(person[property])
+  console.log(person.name)
+}
